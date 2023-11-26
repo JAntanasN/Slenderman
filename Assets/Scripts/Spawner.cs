@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     
     void Start()
     {
-        var pos = new Vector3(0, 300, 0);
+        var pos = new Vector3(0, 100, 0);
 
         for (int i = 0; i < count; i++)
         {

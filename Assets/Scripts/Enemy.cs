@@ -70,4 +70,13 @@ public class Enemy : MonoBehaviour
             agent.SetDestination(hit.point);
         }
     }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            JumpScare.inst.Show();
+        }
+    }
 }
